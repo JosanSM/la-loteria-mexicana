@@ -46,10 +46,6 @@ function displayCards(array) {
 
     card.src = pathToCard;
 
-    // displays the card's name
-    const cardName = document.getElementById("card-name");
-    cardName.innerHTML = array[0].name;
-
 };
 
 
