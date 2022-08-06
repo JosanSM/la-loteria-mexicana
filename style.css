@@ -1,0 +1,149 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #181c25;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+#container {
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    background-color: #6bceac;
+    color: white;
+    border-radius: 15px;
+    transition: 0.7s ease;
+}
+
+#game {
+    width: 80%;
+    height: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+#shuffle {
+    width: 10%;
+    height: 2rem;
+    text-align: center;
+    color: #181c25;
+    margin: 0 auto;
+}
+
+#shuffle h4 {
+    margin: auto;
+}
+
+.button-deck {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #6bceac;
+    align-items: center;
+}
+
+#deck {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    background-color: #343853;
+}
+
+#next-button img{
+    padding-left: 0.4rem;
+}
+
+#deck-img {
+    height: auto;
+    width: 65%;
+    margin: 1rem;
+    border: 10px solid white;
+}
+
+.button-deck img{
+    width: 70%;
+    height: auto;
+    margin: auto 0;
+}
+
+.button-deck {
+    transition: 0.7s ease;
+}
+
+.button:hover,
+.button-deck:hover {
+    cursor: pointer;
+    background-color: #54a68a;
+}
+
+#cards-left {
+    height: 2rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 100%;
+    }
+
+    #game {
+        width: 100%;
+    }
+
+    #shuffle {
+        width: 30%;
+        height: 7%;
+    }
+
+    #deck {
+        width: 60%;
+        height: auto;
+    }
+
+    #deck-img {
+        width: 80%;
+        height: auto;
+        margin: 0.7rem 0 0 0;
+        padding: 0;
+    }
+
+    .button-deck {
+        width: 10%;
+        height: 2.5rem;
+    }
+
+    #next-button img{
+        padding-left: 0.3rem;
+    }
+
+    #cards-left {
+        position: relative;
+        bottom: 0rem;
+    }
+
+}
